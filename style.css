@@ -1,0 +1,145 @@
+body {
+    --main-color: ivory;
+    --button-color: #adac3c;
+    --button-color-dark: #979631;
+    --login-nav: #1c513f;
+    --login-nav-dark: #07292b;
+}
+
+section {
+    background-image: url('assets/background-home.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* main {
+    height: 100vh;
+} */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+a {
+    text-decoration: inherit;
+    color: inherit;
+}
+
+.navbar {
+    color: var(--main-color);
+    padding: 1%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+.navbar img {
+    width: 5vw;
+}
+
+.navbar-item {
+    padding: 2%;
+}
+
+.navbar-item ul {
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0 3vw 0 3vw;
+    gap: 2vw;
+    font-size: 2vw;
+}
+
+#login-nav {
+    background-color: var(--login-nav);
+    padding: 0.5vw 2vw;
+    text-decoration: none;
+    border-radius: 2vw;
+}
+
+#login-nav:hover {
+    background-color: var(--login-nav-dark);
+}
+
+main {
+    padding: 10% 2% 2% 2%;
+    color: var(--main-color);
+}
+
+main img {
+    width: 70%;
+}
+
+.item {
+    padding: 0.5%;
+}
+
+.main-items h1 {
+    font-size: 6vw;
+    text-align: center;
+}
+
+.main-items a {
+    background-color: var(--button-color);
+    color: var(--main-color);
+    padding: 5% 100%;
+    border-radius: 2vw;
+    font-size: 2vw;
+}
+
+.main-items a:hover {
+    background-color: var(--button-color-dark);
+}
+
+.main-grid {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+}
+
+.main-grid p {
+    font-size: 2vw;
+    text-align: justify;
+    padding: 1%;
+}
+
+.item {
+    padding: 5%;
+}
+
+.main-item-play {
+    margin: auto;
+}
+
+footer {
+    background-color: var(--main-color);
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    text-align: center;
+    padding: 2%;
+}
+
+.grid-item-sosmed img {
+    width: 3vw;
+}
+
+.grid-item img {
+    width: 4vw;
+}
+
+.footer-grid p {
+    font-size: 1.5vw;
+}

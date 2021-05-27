@@ -1,0 +1,21 @@
+section {
+    background-image: url('assets/background-signup.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+input[type=email] {
+    border-radius: 0.5vw;
+    border: none;
+    padding: 1% 2%;
+    font-size: 1vw;
+}
+
+.form-input:focus {
+    background: var(--font-color);
+    /* border-color: white; */
+}
+
+.form-button:active {
+    transform: scale(0.98);
+}

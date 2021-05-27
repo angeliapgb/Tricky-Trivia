@@ -1,0 +1,84 @@
+body {
+    --font-color: #f2eac5;
+    --font-color-dark: #d6d2bd;
+    --font-color-p: #E9EFF2;
+    --message-color: tomato;
+}
+
+section {
+    background-image: url('assets/background-signin.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+/* 
+.split {
+    display: flex;
+    padding: 5% 0 0 0;
+}
+
+.empty {
+    width: 60%;
+    color: transparent;
+} */
+
+.signin {
+    background-color: rgba(23, 29, 26, 0.5);
+    text-align: center;
+    width: 40%;
+    color: var(--font-color);
+    padding: 0 0 10% 0;
+    margin: auto;
+    border-radius: 2vw;
+}
+
+.signin-margin {
+    margin: 2vw;
+}
+
+.signin h1 {
+    padding: 2%;
+    font-size: 4vw;
+}
+
+.signin p {
+    padding: 2%;
+    font-size: 1vw;
+    color: var(--font-color-p);
+}
+
+.signin a:hover {
+    text-decoration: underline;
+}
+
+.signin-item {
+    padding: 1%;
+}
+
+.form-message {
+    font-size: 1vw;
+    color: var(--message-color);
+    padding: 1%;
+}
+
+.form-input:focus {
+    background: var(--font-color);
+}
+
+.form-button:active {
+    transform: scale(0.98);
+}
+
+input[type=text], input[type=password], input[type=submit] {
+    border-radius: 0.5vw;
+    border: none;
+    padding: 1% 2%;
+    font-size: 1vw;
+}
+
+#submit-button {
+    background-color: var(--font-color);
+}
+
+#submit-button:hover {
+    background-color: var(--font-color-dark);
+}

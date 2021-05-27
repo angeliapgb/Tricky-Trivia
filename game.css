@@ -1,0 +1,34 @@
+section {
+    background-image: url('assets/background-game.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.grid-game {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    padding: 10%;
+    font-size: 3vw;
+    color: var(--main-color);
+}
+
+.game-level-easy a, .game-level-middle a, .game-level-hard a {
+    border-radius: 0.5vw;
+    background-position: center;
+    background-size: cover;
+    padding: 20%;
+}
+
+.game-level-easy a {
+    background-image: url('assets/easy-level.jpg');
+}
+
+.game-level-middle a {
+    background-image: url('assets/middle-level.jpg');
+}
+
+.game-level-hard a {
+    background-image: url('assets/hard-level.jpg');
+}

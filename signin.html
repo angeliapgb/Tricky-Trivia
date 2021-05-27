@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tricky Trivia</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="signin.css">
+    <link rel="icon" href="assets/logo-trivia.png" type="image/icon type">
+</head>
+<body>
+    <section>
+        <header>
+            <div class="navbar">
+                <div class="navbar-item">
+                    <a href="index.html"><img src="assets/logo-trivia.png" alt="Logo"></a>
+                </div>
+                <div class="navbar-item">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="game.html">Game</a></li>
+                        <li><a href="guide.html">Guide</a></li>
+                        <li><a href="signin.html" id="login-nav">Login</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="split">
+                <!-- <div class="empty">
+                    <p>Trick your mind with Tricky Trivia</p>
+                </div> -->
+                <div class="signin">
+                    <div class="signin-margin">
+                        <h1>LOGIN</h1>
+                        <form action="game.html" class="form" id="login">
+                            <div class="form-message form-message-error">
+                                <!-- Incorrect username or password. -->
+                            </div>
+                            <div class="signin-item">
+                                <input type="text" class="form-input" autofocus placeholder="Username">
+                            </div>
+                            <div class="signin-item">
+                                <input type="password" class="form-input" autofocus placeholder="Password">
+                            </div>
+                            <div class="signin-item">
+                                <input type="submit" class="form-button" value="CONTINUE" id="submit-button">
+                            </div>
+                            <div class="signin-item">
+                                <p>OR</p>
+                                <input type="submit" class="form-button" value="LOGIN AS GUEST" id="submit-button">
+                            </div>
+                            <p>Don't have an account? <a href="signup.html">Create account</a></p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </section>
+    <footer>
+        <div class="footer-grid">
+            <div class="grid-item-sosmed">
+                <a href="https://instagram.com">
+                    <img src="assets/instagram.png" alt="Instagram">
+                </a>
+                <a href="https://facebook.com">
+                    <img src="assets/facebook.png" alt="Facebook">
+                </a>
+                <a href="https://twitter.com">
+                    <img src="assets/twitter.png" alt="Twitter">
+                </a>
+                <a href="https://linkedin.com">
+                    <img src="assets/linkedin.png" alt="Linkedin">
+                </a>
+            </div>
+            <div class="grid-item">
+                <a href="index.html">
+                    <img src="assets/logo-trivia.png" alt="Logo">
+                </a>
+            </div>
+            <div class="grid-item">
+                <p>All rights reserved by &copy;Tricky Trivia</p>
+            </div>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>

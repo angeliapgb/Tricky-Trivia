@@ -1,0 +1,36 @@
+section {
+    background-image: url('assets/background-easy.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.grid-game {
+    text-align: center;
+    padding: 5%;
+}
+
+.grid-game h1 {
+    padding: 5%;
+    font-size: 5vw;
+}
+
+.grid-level {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.grid-level a {
+    padding: 15% 30%;
+    background-color: #211d10;
+    border-radius: 2vw;
+    font-size: 5vw;
+}
+
+/* #unlocked-level {
+    display: none;
+} */
+
+.level img {
+    width: 5vw;
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tricky Trivia</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="easyQuestion.css">
+    <link rel="icon" href="assets/logo-trivia.png" type="image/icon type">
+</head>
+<body>
+    <section>
+        <header>
+            <div class="navbar">
+                <div class="navbar-item">
+                    <a href="index.html"><img src="assets/logo-trivia.png" alt="Logo"></a>
+                </div>
+                <div class="navbar-item">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="game.html">Game</a></li>
+                        <li><a href="guide.html">Guide</a></li>
+                        <li><a href="signin.html" id="login-nav">Login</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="main-content">
+                <div class="content">
+                    <h1>EASY</h1>
+                </div>
+               <div class="content" id="question">
+                <!-- <p>Ruangan apa yang paling ditakuti di rumah sakit?</p> -->
+               </div>
+                <div class="content">
+                    <div class="validation">
+                        <form action="" id="check" name="user-input">
+                            <div class="validate-message" id="error-message">
+                                <p>Wrong answer!</p>
+                            </div>
+                            <div id="hint-message">
+                                <p>You get 1 hint</p>
+                            </div>
+                            <div class="validation-item">
+                                <input type="text" class="input" id="user-answer" autofocus placeholder="Type your answer">
+                            </div>
+                            <div class="validation-item validation-button">
+                                <!-- <button id="prev">&#10094;</button> -->
+                                <a href="" id="next-question">&#10094;</a>
+                                <input type="submit" id="check" value="CHECK" >
+                                <a href="" id="prev-question">&#10095;</a>
+                                <!-- <button id="next">&#10095;</button> -->
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="content content-level">
+                    <div id="level">
+                        <!-- <h3>LEVEL 1</h3> -->
+                    </div>
+                    <div id="hint">
+                        <p id="hint-text">Need help?</p>
+                        <span><img src="assets/hint.png" alt="hint" id="hint-image"></span>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </section>
+    <footer>
+        <div class="footer-grid">
+            <div class="grid-item-sosmed">
+                <a href="https://instagram.com">
+                    <img src="assets/instagram.png" alt="Instagram">
+                </a>
+                <a href="https://facebook.com">
+                    <img src="assets/facebook.png" alt="Facebook">
+                </a>
+                <a href="https://twitter.com">
+                    <img src="assets/twitter.png" alt="Twitter">
+                </a>
+                <a href="https://linkedin.com">
+                    <img src="assets/linkedin.png" alt="Linkedin">
+                </a>
+            </div>
+            <div class="grid-item">
+                <a href="index.html">
+                    <img src="assets/logo-trivia.png" alt="Logo">
+                </a>
+            </div>
+            <div class="grid-item">
+                <p>All rights reserved by &copy;Tricky Trivia</p>
+            </div>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
