@@ -15,7 +15,7 @@ var questionList = [
     }, {
         question: "Siapa yang selalu jadi korban pemerasan?",
         answer: "sapi perah",
-        hintAnswer: "Bundar"
+        hintAnswer: "Licin"
     }, {
         question: "Hewan apa yang paling kurang ajar?",
         answer: "kutu rambut",
@@ -41,6 +41,9 @@ var questionContent = document.getElementById('question');
 var currentQuestion = 0;
 var index = 0;
 
+// Declaration variable calculation
+var totalHint = 0;
+
 // Function show question
 function showQuestion(indexQuestion) {
     var index = questionList[indexQuestion];
@@ -52,17 +55,21 @@ showQuestion(currentQuestion);
 
 // Display next question
 function showNext() {
-    showQuestion(currentQuestion += 1);
+    currentQuestion += 1;
+    showQuestion(currentQuestion);
     errorMessage.style.display = "none";
     hintMessage.style.display = "none";
+    level(currentQuestion + 1);
     return currentQuestion;
 }
 
 // Display prev question
 function showPrev() {
-    showQuestion(currentQuestion -= 1);
+    currentQuestion -= 1;
+    showQuestion(currentQuestion);
     errorMessage.style.display = "none";
     hintMessage.style.display = "none";
+    level(currentQuestion + 1);
     return currentQuestion;
 }
 
@@ -77,18 +84,20 @@ level(currentQuestion+1);
 function answerCheck() {
     var input = document.forms["user-input"]["user-answer"].value;
 
+    // alert('currentQuestion: ' + currentQuestion + ' index :' + index + ' totalHint: ' + totalHint);
     for(index = currentQuestion; index <= questionList.length + 1; index++) {
         if(input == questionList[index].answer && questionContent.textContent == questionList[index].question) {
             hintMessage.style.display = "block";
             errorMessage.style.display = "none";
             currentQuestion += 1;
             index += 1;
+            totalHint += 1;
             if(index == questionList.length) {
                 alert('Easy level completed');
             }
             showQuestion(currentQuestion);
-            level(currentQuestion += 1);
-            return false;
+            level(currentQuestion + 1);
+            return totalHint,false;
         } else {
             hintMessage.style.display = "none";
             errorMessage.style.display = "block";
@@ -96,4 +105,15 @@ function answerCheck() {
         }
     }
     return false;
+}
+
+// Function hint message
+function messageHint() {
+    if(totalHint < 1) {
+        alert('Not enough hint');
+    } else {
+        alert(questionList[currentQuestion].hintAnswer);
+        totalHint -=1;
+    }
+    return totalHint, false;
 }
