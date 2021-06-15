@@ -47,9 +47,9 @@
                             </div>
                             <div class="validation-item validation-button">
                                 <!-- <button id="prev">&#10094;</button> -->
-                                <a href="" id="prev-question" onclick="return showPrev()">&#10094;</a>
-                                <input type="submit" id="check" onclick="answerCheck()" value="CHECK" >
-                                <a href="" id="next-question" onclick="return showNext()">&#10095;</a>
+                                <a href="" id="prev-question" onclick="showPrev();return false">&#10094;</a>
+                                <input type="submit" id="check" onclick="return answerCheck()" value="CHECK" >
+                                <a href="" id="next-question" onclick="showNext();return false">&#10095;</a>
                                 <!-- <button id="next">&#10095;</button> -->
                             </div>
                         </form>
