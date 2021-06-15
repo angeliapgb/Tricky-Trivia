@@ -112,9 +112,9 @@ input[type=submit] {
     color: seashell;
 }
 
-.validation-item:active {
+/* .validation-item:active {
     transform: scale(0.98);
-}
+} */
 
 .validation-button a {
     padding: 0 2vw;
