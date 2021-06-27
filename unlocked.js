@@ -1,11 +1,21 @@
-const level1 = document.getElementById('level-1');
-const level2 = document.getElementById('level-2');
-const level3 = document.getElementById('level-3');
-const level4 = document.getElementById('level-4');
-const level5 = document.getElementById('level-5');
+const levelLock = document.getElementById('level-lock');
+const levelImg = document.getElementById('level-img');
+const levelText = document.getElementById('level-text');
 
-function unlocked() {
-    currentQuestion = 2;
-    showQuestion(currentQuestion);
-    return currentQuestion;
+// Redirect button easy
+function easyPage() {
+    location.href='easyQuestion.html';
 }
+
+// Redirect button hard
+function hardPage() {
+    location.href='hardQuestion.html';
+}
+
+function change() {
+    levelImg.style.display = "none";
+    levelText.style.display = "block";
+    return false;
+}
+
+// alert(currentQuestion);

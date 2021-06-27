@@ -34,7 +34,9 @@ a {
     position: fixed;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    background-color: #24282e;
+    width: 100vw;
 }
 
 .navbar a:hover {
@@ -45,9 +47,9 @@ a {
     width: 5vw;
 }
 
-.navbar-item {
+/* .navbar-item {
     padding: 2%;
-}
+} */
 
 .navbar-item ul {
     text-decoration: none;

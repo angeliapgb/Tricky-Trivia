@@ -4,14 +4,6 @@ const level3 = document.getElementById('level-3');
 const level4 = document.getElementById('level-4');
 const level5 = document.getElementById('level-5');
 
-// function unlocked() {
-//     currentQuestion = 2;
-//     // showQuestion(currentQuestion);
-//     // return currentQuestion;
-//     // alert('aaaaaa');
-//     return currentQuestion;
-// }
-
 // List questions
 var questionList = [
     {
@@ -58,18 +50,24 @@ var index = 0;
 // Declaration variable calculation
 var totalHint = 0;
 
-// Function show question
+// Declaration array of check
+var answered = [false, false, false, false, false];
+
+// Function show hard question
 function showQuestion(indexQuestion) {
     var index = questionList[indexQuestion];
     questionContent.textContent = index.question;
 }
 
-// Display first question
+// Display first hard question
 showQuestion(currentQuestion);
 
 // Display next question
 function showNext() {
     currentQuestion += 1;
+    if(currentQuestion == questionList.length) {
+        return false;
+    }
     showQuestion(currentQuestion);
     errorMessage.style.display = "none";
     hintMessage.style.display = "none";
@@ -84,6 +82,9 @@ function showPrev() {
     errorMessage.style.display = "none";
     hintMessage.style.display = "none";
     level(currentQuestion + 1);
+    if(currentQuestion == 0) {
+        return false;
+    }
     return currentQuestion;
 }
 
@@ -91,6 +92,17 @@ function showPrev() {
 function level (currentLevel) {
     document.getElementById('level').innerHTML = 'Level ' + currentLevel;
 }
+
+// Function unlocked next level
+// function nextLevel(currentQuestion) {
+//     if(answered[currentQuestion] == true) {
+//         buttonNext.style.display = "block";
+//         alert(currentQuestion);
+//     } 
+//     // else {
+//     //     buttonNext.style.visibility = "hidden";
+//     // }
+// }
 
 level(currentQuestion+1);
 
@@ -107,7 +119,7 @@ function answerCheck() {
             index += 1;
             totalHint += 1;
             if(index == questionList.length) {
-                alert('Easy level completed');
+                alert('Hard level completed');
             }
             showQuestion(currentQuestion);
             level(currentQuestion + 1);

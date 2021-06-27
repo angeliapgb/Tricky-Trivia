@@ -18,14 +18,37 @@ section {
 .grid-level {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
+    gap: 2vw;
 }
 
-.grid-level a {
+.grid-level p {
     padding: 15% 30%;
-    background-color: #211d10;
     border-radius: 2vw;
     font-size: 5vw;
 }
+
+#level-lock p {
+    display: none;
+}
+
+button {
+    background-color: #211d10;
+    border: none;
+    border-radius: 2vw;
+}
+
+button img {
+    width: 4vw;
+}
+
+/* .grid-level p {
+    font-size: 2%;
+    color: aliceblue;
+} */
+
+/* #text-2 {
+    font-size: 5vw;
+} */
 
 /* #unlocked-level {
     display: none;
@@ -34,3 +57,7 @@ section {
 .level img {
     width: 5vw;
 }
+
+/* #level-2 p {
+    display: none;
+} */
