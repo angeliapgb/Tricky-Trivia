@@ -6,20 +6,10 @@ body {
 }
 
 section {
-    background-image: url('assets/background-signin.jpg');
+    background-image: url('assets/background-signin.png');
     background-position: center;
     background-repeat: no-repeat;
 }
-/* 
-.split {
-    display: flex;
-    padding: 5% 0 0 0;
-}
-
-.empty {
-    width: 60%;
-    color: transparent;
-} */
 
 .signin {
     background-color: rgba(23, 29, 26, 0.5);
@@ -73,6 +63,10 @@ input[type=text], input[type=password], input[type=submit] {
     border: none;
     padding: 1% 2%;
     font-size: 1vw;
+}
+
+input[type=submit] {
+    border-radius: 5vw;
 }
 
 #submit-button {

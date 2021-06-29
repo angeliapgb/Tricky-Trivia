@@ -1,3 +1,15 @@
+section {
+    background-image: url('assets/background-easy-level.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#question {
+    background-color: rgba(255, 192, 86, 0.5);
+    color: black;
+}
+
 .validate-message, #hint-message {
     text-align: center;
     margin: 2%;
@@ -9,8 +21,8 @@
     gap: 2vw;
 }
 .validation button {
-    background-color: #1f2738;
-    color: white;
+    background-color: rgba(160, 200, 104, 0.6);
+    color: black;
     border: none;
     padding: 2%;
     border-radius: 2vw;
@@ -18,7 +30,7 @@
 }
 
 .validation button:hover {
-    background-color: #059aa5;
+    background-color: rgb(160, 200, 104);
 }
 
 .validation-item {
@@ -26,7 +38,7 @@
 }
 
 .validation-item a {
-    background-color: #243676;
+    background-color: rgba(155, 195, 195, 0.7);
     border-radius: 2vw;
     padding: 1% 2%;
     font-size: 1vw;

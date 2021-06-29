@@ -1,5 +1,5 @@
 section {
-    background-image: url('assets/background-guide.jpg');
+    background-image: url('assets/background-guide.png');
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -10,11 +10,12 @@ main {
 
 .guide {
     text-align: center;
-    background-color: rgba(21, 32, 54, 0.5);
+    background-color: rgba(248, 190, 22, 0.4);
     padding: 5%;
     border-radius: 2vw;
 }
 
 .guide p {
     padding: 2%;
+    text-align: justify;
 }

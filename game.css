@@ -1,8 +1,14 @@
 section {
-    background-image: url('assets/background-game.jpg');
+    background-image: url('assets/background-game.png');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+main p {
+    text-align: center;
+    font-weight: bolder;
+    font-size: larger;
 }
 
 .grid-game {
@@ -12,6 +18,7 @@ section {
     padding: 10%;
     font-size: 3vw;
     color: var(--main-color);
+    gap: 2vw;
 }
 
 .game-level-easy a, .game-level-middle a, .game-level-hard a {
@@ -21,14 +28,8 @@ section {
     padding: 20%;
 }
 
-.game-level-easy a {
-    background-image: url('assets/easy-level.jpg');
-}
-
-.game-level-middle a {
-    background-image: url('assets/middle-level.jpg');
-}
-
-.game-level-hard a {
-    background-image: url('assets/hard-level.jpg');
+.game-level {
+    background-color: rgba(224, 218, 90, 0.7);
+    padding: 15%;
+    border-radius: 2vw;
 }

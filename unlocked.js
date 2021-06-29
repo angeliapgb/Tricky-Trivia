@@ -22,5 +22,3 @@ function change() {
     levelText.style.display = "block";
     return false;
 }
-
-// alert(currentQuestion);

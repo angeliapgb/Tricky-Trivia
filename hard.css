@@ -1,5 +1,5 @@
 section {
-    background-image: url('assets/background-easy.jpg');
+    background-image: url('assets/background-easy.png');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -32,7 +32,7 @@ section {
 }
 
 button {
-    background-color: #211d10;
+    background-color: rgba(136, 111, 76, 0.4);
     border: none;
     border-radius: 2vw;
 }
@@ -41,23 +41,6 @@ button img {
     width: 4vw;
 }
 
-/* .grid-level p {
-    font-size: 2%;
-    color: aliceblue;
-} */
-
-/* #text-2 {
-    font-size: 5vw;
-} */
-
-/* #unlocked-level {
-    display: none;
-} */
-
 .level img {
     width: 5vw;
 }
-
-/* #level-2 p {
-    display: none;
-} */

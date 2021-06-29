@@ -41,7 +41,7 @@ var currentQuestion = 0;
 var index = 0;
 
 // Declaration variable calculation
-var totalHint = 0;
+var totalHint = 1;
 
 // Declaration variable check easy question
 const yes = document.getElementById('yes');

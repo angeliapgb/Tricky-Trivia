@@ -1,5 +1,5 @@
 section {
-    background-image: url('assets/background-signup.jpg');
+    background-image: url('assets/background-signup.png');
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -13,7 +13,6 @@ input[type=email] {
 
 .form-input:focus {
     background: var(--font-color);
-    /* border-color: white; */
 }
 
 .form-button:active {

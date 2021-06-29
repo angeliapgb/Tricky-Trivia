@@ -1,0 +1,21 @@
+section {
+    background-image: url('assets/background-medium-level.png');
+}
+
+#question {
+    background-color: rgba(31,57,70, 0.8);
+    color: seashell;
+}
+
+.validation button {
+    background-color: rgb(125,150,164);
+}
+
+.validation button:hover {
+    background-color: rgba(125,150,164, 0.5);
+}
+
+.validation-item a {
+    background-color: rgb(31, 57, 70);
+    color: seashell;
+}

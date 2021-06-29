@@ -7,25 +7,25 @@ const level5 = document.getElementById('level-5');
 // List questions
 var questionList = [
     {
-        question: "Ruangan apa yang paling ditakuti di rumah sakit?",
-        answer: "administrasi",
-        hintAnswer: "Tempat membayar"
+        question: "The Powerpuff Girls are 3 distinct colors, they are blue, green, and ...",
+        answer: "red",
+        hintAnswer: "First color of RGB"
     }, {
-        question: "Binatang apa yang seluruh anggota tubuhnya ada di kepala?",
-        answer: "kutu rambut",
-        hintAnswer: "Hitam kecil"
+        question: "What is Sodium Chloride?",
+        answer: "salt",
+        hintAnswer: "NaCl"
     }, {
-        question: "Aku selalu ada di atas presiden dan menteri, tapi aku tidak punya jabatan apa pun dalam pemerintahan. Siapakah aku?",
-        answer: "peci",
-        hintAnswer: "Bundar"
+        question: "Which Disney princess sings 'Just Around The Riverbend'?",
+        answer: "pocahontas",
+        hintAnswer: "Native American woman"
     }, {
-        question: "Siapa yang selalu jadi korban pemerasan?",
-        answer: "sapi perah",
-        hintAnswer: "Licin"
+        question: "What is the longest river in the world?",
+        answer: "nile",
+        hintAnswer: "Located in Africa"
     }, {
-        question: "Hewan apa yang paling kurang ajar?",
-        answer: "kutu rambut",
-        hintAnswer: "Hitam kecil"
+        question: "What is the deadliest snake?",
+        answer: "black mamba",
+        hintAnswer: "Aespa debut song"
     }
 ]
 
@@ -48,7 +48,7 @@ var currentQuestion = 0;
 var index = 0;
 
 // Declaration variable calculation
-var totalHint = 0;
+var totalHint = 1;
 
 // Declaration array of check
 var answered = [false, false, false, false, false];
@@ -110,7 +110,6 @@ level(currentQuestion+1);
 function answerCheck() {
     var input = document.forms["user-input"]["user-answer"].value;
 
-    // alert('currentQuestion: ' + currentQuestion + ' index :' + index + ' totalHint: ' + totalHint);
     for(index = currentQuestion; index <= questionList.length + 1; index++) {
         if(input == questionList[index].answer && questionContent.textContent == questionList[index].question) {
             hintMessage.style.display = "block";
