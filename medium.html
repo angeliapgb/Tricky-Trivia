@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tricky Trivia</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="hardQuestion.css">
+    <link rel="stylesheet" href="hard.css">
     <link rel="icon" href="assets/logo-trivia.png" type="image/icon type">
 </head>
 <body>
@@ -32,42 +32,28 @@
             </div>
         </header>
         <main>
-            <div class="main-content">
-                <div class="content">
-                    <h1>HARD</h1>
-                </div>
-               <div class="content" id="question">
-               </div>
-                <div class="content">
-                    <div class="validation">
-                        <form action="" id="check" name="user-input">
-                            <div class="validate-message" id="error-message">
-                                <p>Wrong answer!</p>
-                            </div>
-                            <div id="hint-message">
-                                <p>You get 1 hint</p>
-                            </div>
-                            <div class="validation-item">
-                                <input type="text" class="input" id="user-answer" autofocus placeholder="Type your answer">
-                            </div>
-                            <div class="validation-item validation-button">
-                                <!-- <button id="prev">&#10094;</button> -->
-                                <a href="" id="prev-question" onclick="showPrev();return false">&#10094;</a>
-                                <input type="submit" id="check" onclick="return answerCheck()" value="CHECK" >
-                                <a href="" id="next-question" onclick="showNext();return false">&#10095;</a>
-                                <!-- <button id="next">&#10095;</button> -->
-                            </div>
-                        </form>
-                    </div>
-                </div>
-                <div class="content content-level">
-                    <div id="level">
-                        <!-- <h3>LEVEL 1</h3> -->
-                    </div>
-                    <div id="hint">
-                        <p id="hint-text">Need help?</p>
-                        <span><a href="" id="hint" onclick="messageHint(); return false"><img src="assets/hint.png" alt="hint" id="hint-image"></a></span>
-                    </div>
+            <div class="grid-game">
+                <h1>Unlocked Level</h1>
+                <div class="grid-level">
+                    <button onclick="mediumPage()">
+                        <p>1</p>
+                    </button>
+                    <button id="level-lock" onclick="change()">
+                        <img src="Assets/lock.png" alt="" id="level-img">
+                        <p id="level-text">2</p>
+                    </button>
+                    <button id="level-lock" onclick="change()">
+                        <img src="Assets/lock.png" alt="" id="level-img">
+                        <p id="level-text">3</p>
+                    </button>
+                    <button id="level-lock" onclick="change()">
+                        <img src="Assets/lock.png" alt="" id="level-img">
+                        <p id="level-text">4</p>
+                    </button>
+                    <button id="level-lock" onclick="change()">
+                        <img src="Assets/lock.png" alt="" id="level-img">
+                        <p id="level-text">5</p>
+                    </button>
                 </div>
             </div>
         </main>
@@ -99,5 +85,6 @@
         </div>
     </footer>
     <script src="main.js"></script>
+    <script src="unlocked.js"></script>
 </body>
 </html>

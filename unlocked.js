@@ -7,6 +7,11 @@ function easyPage() {
     location.href='easyQuestion.html';
 }
 
+// Redirect button medium
+function mediumPage() {
+    location.href='mediumQuestion.html';
+}
+
 // Redirect button hard
 function hardPage() {
     location.href='hardQuestion.html';

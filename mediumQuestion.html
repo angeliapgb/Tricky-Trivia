@@ -7,6 +7,7 @@
     <title>Tricky Trivia</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="hardQuestion.css">
+    <link rel="stylesheet" href="easyQuestion.css">
     <link rel="icon" href="assets/logo-trivia.png" type="image/icon type">
 </head>
 <body>
@@ -34,35 +35,30 @@
         <main>
             <div class="main-content">
                 <div class="content">
-                    <h1>HARD</h1>
+                    <h1>MEDIUM</h1>
                 </div>
                <div class="content" id="question">
                </div>
                 <div class="content">
+                    <div class="validate-message" id="error-message">
+                        <p>Wrong answer!</p>
+                    </div>
+                    <div id="hint-message">
+                        <p>You get 1 hint</p>
+                    </div>
                     <div class="validation">
-                        <form action="" id="check" name="user-input">
-                            <div class="validate-message" id="error-message">
-                                <p>Wrong answer!</p>
-                            </div>
-                            <div id="hint-message">
-                                <p>You get 1 hint</p>
-                            </div>
-                            <div class="validation-item">
-                                <input type="text" class="input" id="user-answer" autofocus placeholder="Type your answer">
-                            </div>
-                            <div class="validation-item validation-button">
-                                <!-- <button id="prev">&#10094;</button> -->
-                                <a href="" id="prev-question" onclick="showPrev();return false">&#10094;</a>
-                                <input type="submit" id="check" onclick="return answerCheck()" value="CHECK" >
-                                <a href="" id="next-question" onclick="showNext();return false">&#10095;</a>
-                                <!-- <button id="next">&#10095;</button> -->
-                            </div>
-                        </form>
+                        <button id="a" onclick="check()"></button>
+                        <button id="b" onclick="check()"></button>
+                        <button id="c" onclick="check()"></button>
+                        <button id="d" onclick="check()"></button>
+                    </div>
+                    <div class="validation-item validation-button">
+                        <a href="" id="prev-medium-question" onclick="showMediumPrev();return false">&#10094; Prev</a>
+                        <a href="" id="next-medium-question" onclick="showMediumNext();return false">Next &#10095;</a>
                     </div>
                 </div>
                 <div class="content content-level">
                     <div id="level">
-                        <!-- <h3>LEVEL 1</h3> -->
                     </div>
                     <div id="hint">
                         <p id="hint-text">Need help?</p>
@@ -98,6 +94,6 @@
             </div>
         </div>
     </footer>
-    <script src="main.js"></script>
+    <script src="medium.js"></script>
 </body>
 </html>
